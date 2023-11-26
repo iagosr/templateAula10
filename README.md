@@ -15,5 +15,5 @@ Projeto criado com as bibliotecas React JS e Material UI.
    `
 
 ## Alterações feitas por mim:
-1 - Alterei a cor do botão editar para azul (classe primary)
-2 - Adicionei o sweetAlert2 para quando salvar uma tarefa
+1. Alterei a cor do botão editar para azul (classe primary)
+2. Adicionei o sweetAlert2 para quando salvar uma tarefa
