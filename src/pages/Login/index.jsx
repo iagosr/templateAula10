@@ -14,7 +14,7 @@ const Login = ({ onLogin }) => {
 
   // Função chamada quando o botão de login é clicado
   const handleLogin = () => {
-    if (login === 'Gilmario' && password === '123') {
+    if (login === 'iago' && password === '123') {
       onLogin();  // Chama a função onLogin se as credenciais estiverem corretas
     } else {
       const contaErros = maxLoginAttempts - (loginAttempts + 1);
@@ -94,7 +94,7 @@ const Login = ({ onLogin }) => {
       >
         Login
       </Button>
-      <h4 style={{ color: '#808B96' }}>Dev: by Gilmario Santos</h4>
+      <h4 style={{ color: '#808B96' }}>Dev: by Iago Soares</h4>
 
       <Snackbar
         open={showAlert}
@@ -106,7 +106,7 @@ const Login = ({ onLogin }) => {
           onClose={handleCloseAlert}
           severity="error"
           sx={{ backgroundColor: '#FFA500', color: '#fff' }}
-          // Exibe a mensagem de erro com base nas tentativas restantes
+        // Exibe a mensagem de erro com base nas tentativas restantes
         >
           Credenciais inválidas *Login ou Senha Incorreta!. {loginAttempts === 2 ? ' Esta é sua última tentativa.' : `Restam ${maxLoginAttempts - loginAttempts} tentativas.`}
         </MuiAlert>
